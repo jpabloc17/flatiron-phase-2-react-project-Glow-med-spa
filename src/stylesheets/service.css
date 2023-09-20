@@ -1,0 +1,23 @@
+img {
+  width: 250px;
+  height: 100%;
+}
+
+.service-container {
+  margin: 50px 200px;
+  gap: 50px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  height: fit-content;
+  align-self: center;
+}
+
+span {
+  font-size: 25px;
+  margin: 0 10px;
+  font-weight: 600;
+}

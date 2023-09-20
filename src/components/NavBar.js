@@ -1,6 +1,8 @@
+import "../stylesheets/navBar.css";
+
 function NavBar() {
   return (
-    <nav>
+    <nav className="nav-bar">
       <ul>
         <li>Services</li>
         <li>Calender</li>
