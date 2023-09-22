@@ -1,17 +1,22 @@
 import "../stylesheets/service.css";
 
-function Service({ url, name, price, details }) {
+function Service({ service }) {
+  console.log(service);
+  const { image, name, price, description } = service;
   return (
     <div className="service-container">
       <div className="image-container">
-        <img src={url} alt="Imageof the service" />
+        <img src={image} alt={name} />
       </div>
       <div className="details-container">
         <div className="service-title">
           <span>{name}</span>
-          <span>{`$${price}`}</span>
         </div>
-        <p>{details}</p>
+        <p>{description}</p>
+        <div>
+          <span>&#65284;{`${price}`} &#128336; 30 minutes</span>
+          <span></span>
+        </div>
       </div>
       <button>Book</button>
     </div>
