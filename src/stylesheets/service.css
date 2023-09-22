@@ -4,19 +4,22 @@ img {
 }
 
 .service-container {
-  margin: 50px 200px;
-  gap: 50px;
-  border: 1px solid black;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 5px;
+  margin: 50px 100px;
+  gap: 1em;
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-button {
-  height: fit-content;
-  align-self: center;
+.title {
+  display: flex;
+  justify-content: center;
 }
 
 span {
+  color: rgb(227, 80, 154);
   font-size: 25px;
   margin: 0 10px;
   font-weight: 600;

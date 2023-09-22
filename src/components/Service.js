@@ -7,8 +7,10 @@ function Service({ url, name, price, details }) {
         <img src={url} alt="Imageof the service" />
       </div>
       <div className="details-container">
-        <span>{name}</span>
-        <span>{`$${price}`}</span>
+        <div className="service-title">
+          <span>{name}</span>
+          <span>{`$${price}`}</span>
+        </div>
         <p>{details}</p>
       </div>
       <button>Book</button>
