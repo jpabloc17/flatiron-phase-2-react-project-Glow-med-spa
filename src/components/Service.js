@@ -1,7 +1,6 @@
 import "../stylesheets/service.css";
 
 function Service({ service }) {
-  console.log(service);
   const { image, name, price, description } = service;
   return (
     <div className="service-container">

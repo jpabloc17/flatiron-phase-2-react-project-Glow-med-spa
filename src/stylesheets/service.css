@@ -1,10 +1,10 @@
 img {
-  width: 250px;
+  width: 200px;
   height: 100%;
 }
 
 .service-container {
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  box-shadow: rgba(227, 80, 153, 0.35) 0px 5px 15px;
   border-radius: 5px;
   margin: 50px 100px;
   gap: 1em;
@@ -13,9 +13,10 @@ img {
   justify-content: space-between;
 }
 
-.title {
+.service-container div {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 span {

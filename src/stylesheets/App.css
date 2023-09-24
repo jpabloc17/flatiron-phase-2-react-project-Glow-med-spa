@@ -2,8 +2,27 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: sans-serif;
+  position: relative;
 }
 
-.App {
+.home {
+  height: 90vh;
+  background-image: url("https://info.ehl.edu/hubfs/Imported_Blog_Media/1440x960-medical-spa-1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: lighten;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.home h1 {
+  color: #000000;
+  font-size: 4rem;
+  margin: 0 10rem;
   text-align: center;
+  padding-top: 10%;
+}
+
+.logo {
+  width: 60px;
 }

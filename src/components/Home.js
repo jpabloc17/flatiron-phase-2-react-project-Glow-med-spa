@@ -1,7 +1,9 @@
+import "../stylesheets/App.css";
+
 function Home() {
   return (
-    <div>
-      <h1>Welcome to P&M Spa</h1>
+    <div className="home">
+      <h1>Welcome to Reluxe Med Spa</h1>
     </div>
   );
 }
