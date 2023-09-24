@@ -1,7 +1,7 @@
 import "../stylesheets/service.css";
 
 function Service({ service }) {
-  const { image, name, price, description } = service;
+  const { image, name, price, description, time } = service;
   return (
     <div className="service-container">
       <div className="image-container">
@@ -9,11 +9,13 @@ function Service({ service }) {
       </div>
       <div className="details-container">
         <div className="service-title">
-          <span>{name}</span>
+          <h2>{name}</h2>
         </div>
         <p>{description}</p>
         <div>
-          <span>&#65284;{`${price}`} &#128336; 30 minutes</span>
+          <span>
+            &#65284;{`${price}`} &#128336; {time} minutes
+          </span>
           <span></span>
         </div>
       </div>

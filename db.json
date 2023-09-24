@@ -5,42 +5,48 @@
       "name": "HydraFacial",
       "image": "https://dimyth.com/wp-content/uploads/2022/06/hydrafacial-product-1.jpg",
       "price": "300",
-      "description": "The invigorating treatment includes deeply cleansing, exfoliating, and extracting and impurities from the skin while simultaneously infusing nourishing ingredients to hydrate the skin."
+      "description": "The invigorating treatment includes deeply cleansing, exfoliating, and extracting and impurities from the skin while simultaneously infusing nourishing ingredients to hydrate the skin.",
+      "time": "60"
     },
     {
       "id": 2,
-      "name": "Dermapen Microneedling",
-      "image": "https://dermapen.com/wp-content/uploads/Untitled-1ee-2-500x478.png",
+      "name": "SkinPen Microneedling",
+      "image": "https://rgrpharma.com/wp-content/uploads/2019/11/rgr_skinpen.jpg",
       "price": "400",
-      "description": "Microneedling is safe for all skin types and promotes care-free healing to address acne scars, fine lines, and wrinkles. It can also be used to decrease the appearance of stretch marks. It's a fast and safe method that initiates the production of collagen and elastin in your skin."
+      "description": "Microneedling is safe for all skin types and promotes care-free healing to address acne scars, fine lines, and wrinkles. It can also be used to decrease the appearance of stretch marks. It's a fast and safe method that initiates the production of collagen and elastin in your skin.",
+      "time": "60"
     },
     {
       "id": 3,
       "name": "PERFECT DERMA PEEL",
-      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTryjEGwFm3TPhKWU4xCz2P5kdginQNUwzw6bAnThG1ykZC7gSpCQRKVm0UuCboBHdiTZE&usqp=CAU",
+      "image": "https://ams-studios.com/wp-content/uploads/2022/11/the-perfect-peel-single-kit-52.jpg",
       "price": "400",
-      "description": "The Perfect Derma Peel is a chemical peel that treats all skin concerns. This is a 7 day peel that brightens and clarifies the skin. The peel comes with a post peel kit to protect and soothe your skin during the peeling process."
+      "description": "The Perfect Derma Peel is a chemical peel that treats all skin concerns. This is a 7 day peel that brightens and clarifies the skin. The peel comes with a post peel kit to protect and soothe your skin during the peeling process.",
+      "time": "30"
     },
     {
       "id": 4,
       "name": "BioRePeel",
       "image": "https://static.wixstatic.com/media/ed418f_dd88859a1d424eec854ff7d3c9647640~mv2.jpg/v1/fill/w_640,h_500,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/ed418f_dd88859a1d424eec854ff7d3c9647640~mv2.jpg",
       "price": "375",
-      "description": "An innovative treatment peel that dissolves bonds between cells that carefully removes the top layer of skin revealing the glowing smooth layer underneath."
+      "description": "An innovative treatment peel that dissolves bonds between cells that carefully removes the top layer of skin revealing the glowing smooth layer underneath.",
+      "time": "30"
     },
     {
       "id": 5,
       "name": "Deep Cleansing Facial",
       "image": "https://www.rejeuvine.com/wp-content/uploads/2018/08/7-Steps-That-the-Best-Spa-F.jpg",
       "price": "150",
-      "description": "A deep cleansing facial is a treatment that thoroughly cleanses your pores and removes impurities from your skin. It can be ideal for people with all types of skin who want a thorough, deep face cleanse."
+      "description": "A deep cleansing facial is a treatment that thoroughly cleanses your pores and removes impurities from your skin. It can be ideal for people with all types of skin who want a thorough, deep face cleanse.",
+      "time": "60"
     },
     {
       "id": 6,
       "name": "Dermaplaning Facial",
-      "image": "https://jtavclinicalskincare.com/wp-content/uploads/2021/04/Dermaplaning-portrait.jpg",
+      "image": "https://www.luxtan.co/uploads/1/2/8/1/128114170/published/dermaplaning-1.jpg?1638553802",
       "price": "170",
-      "description": "Dermaplaning is a safe, non-invasive treatment that uses a medical blade to gently exfoliate your skin. This process removes dead, dulling skin cells as well as peach fuzz, leaving your face softer and smoother than ever before."
+      "description": "Dermaplaning is a safe, non-invasive treatment that uses a medical blade to gently exfoliate your skin. This process removes dead, dulling skin cells as well as peach fuzz, leaving your face softer and smoother than ever before.",
+      "time": "75"
     }
   ]
 }
