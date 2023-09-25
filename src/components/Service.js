@@ -1,9 +1,14 @@
 import "../stylesheets/service.css";
 
-function Service({ service }) {
+function Service({ service, setDisplayForm, displayForm }) {
   const { image, name, price, description, time } = service;
+
   return (
-    <div className="service-container">
+    <div
+      className={
+        displayForm ? "service-container blur-background" : "service-container"
+      }
+    >
       <div className="image-container">
         <img src={image} alt={name} />
       </div>
@@ -19,7 +24,9 @@ function Service({ service }) {
           <span></span>
         </div>
       </div>
-      <button>Book</button>
+      <button onClick={(e) => setDisplayForm((displayForm) => !displayForm)}>
+        Book
+      </button>
     </div>
   );
 }
