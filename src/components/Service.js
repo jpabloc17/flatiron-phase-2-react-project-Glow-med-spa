@@ -21,7 +21,6 @@ function Service({ service, setDisplayForm, displayForm }) {
           <span>
             &#65284;{`${price}`} &#128336; {time} minutes
           </span>
-          <span></span>
         </div>
       </div>
       <button onClick={(e) => setDisplayForm((displayForm) => !displayForm)}>
