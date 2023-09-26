@@ -7,3 +7,8 @@
   text-align: center;
   justify-content: space-between;
 }
+
+.blurry-header {
+  background-color: #51515160;
+  backdrop-filter: blur(10px);
+}
