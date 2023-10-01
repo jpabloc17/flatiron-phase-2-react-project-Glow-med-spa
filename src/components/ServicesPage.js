@@ -33,7 +33,11 @@ function ServicesPage() {
         <NewAppoinmentForm setDisplayForm={setDisplayForm} />
       ) : null}
       <div className="service-page">
-        {loading ? servicesList : <h1>Loading...</h1>}
+        {loading ? (
+          servicesList
+        ) : (
+          <h1 className="loading-message">Loading...</h1>
+        )}
       </div>
     </>
   );

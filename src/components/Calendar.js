@@ -1,7 +1,34 @@
-function Calendar({ tableinformation }) {
-  const { date, client, time, esthetician } = tableinformation[0];
+import { useState, useEffect } from "react";
+import "../stylesheets/table.css";
 
+function Calendar() {
+  const [appoinmentsInfo, setAppoinmentsInfo] = useState([]);
+  const [loading, setLoading] = useState(false);
+
+  useEffect(() => {
+    fetch("http://localhost:3001/appoinments")
+      .then((resp) => resp.json())
+      .then((data) => {
+        setAppoinmentsInfo(data);
+        setLoading(true);
+      });
+  }, []);
+  const tableData = appoinmentsInfo.map((client) => {
   return (
+      <tr key={client.id}>
+        <td>{client.date}</td>
+        <td>
+          {client.name} {client.lastName}
+        </td>
+        <td>{client.time}</td>
+        <td>
+          <button>cancel</button>
+        </td>
+      </tr>
+    );
+  });
+
+  return loading ? (
     <div className="calendar-container">
       <h1>Calander</h1>
       <div className="calendar-details">
@@ -16,35 +43,11 @@ function Calendar({ tableinformation }) {
               <th>Cancel</th>
             </tr>
           </thead>
-          <tbody>
-            <tr>
-              <td>{date}</td>
-              <td>{client}</td>
-              <td>{time}</td>
-              <td>{esthetician}</td>
-              <td>
-                <button>reschedule</button>
-              </td>
-              <td>
-                <button>cancel</button>
-              </td>
-            </tr>
-            <tr>
-              <td>{date}</td>
-              <td>{client}</td>
-              <td>{time}</td>
-              <td>{esthetician}</td>
-              <td>
-                <button>reschedule</button>
-              </td>
-              <td>
-                <button>cancel</button>
-              </td>
-            </tr>
-          </tbody>
+        <tbody>{tableData}</tbody>
         </table>
       </div>
-    </div>
+  ) : (
+    <h1 className="loading-message">loading...</h1>
   );
 }
 

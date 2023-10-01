@@ -14,13 +14,9 @@
   align-items: center;
 }
 
-.service-container div {
+.details-container {
   display: flex;
   flex-direction: column;
-}
-
-.details-container {
-  height: 100%;
   gap: 20px;
 }
 
@@ -30,8 +26,7 @@
 
 span {
   color: #949fe8;
-
-  font-size: 25px;
+  font-size: 1.5rem;
   margin: 0 10px;
   font-weight: 600;
 }
@@ -49,11 +44,6 @@ span {
   background-color: #949fe8;
   color: white;
   border-radius: 5px;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 25px;
 }
 
 .blur-background {
