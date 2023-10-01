@@ -13,8 +13,20 @@ function Calendar() {
         setLoading(true);
       });
   }, []);
+
+  function handleCancelations(clientToRemove) {
+    fetch(`http://localhost:3001/appoinments/${clientToRemove.id}`, {
+      method: "DELETE",
+    });
+
+    const updateAppoinmentsInfo = appoinmentsInfo.filter(
+      (client) => client.id !== clientToRemove.id
+    );
+    setAppoinmentsInfo(updateAppoinmentsInfo);
+  }
+
   const tableData = appoinmentsInfo.map((client) => {
-  return (
+    return (
       <tr key={client.id}>
         <td>{client.date}</td>
         <td>
@@ -22,7 +34,7 @@ function Calendar() {
         </td>
         <td>{client.time}</td>
         <td>
-          <button>cancel</button>
+          <button onClick={() => handleCancelations(client)}>cancel</button>
         </td>
       </tr>
     );
@@ -30,22 +42,26 @@ function Calendar() {
 
   return loading ? (
     <div className="calendar-container">
-      <h1>Calander</h1>
-      <div className="calendar-details">
-        <table className="table-information">
-          <thead>
+      <table className="table-information">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Client</th>
+            <th>Time</th>
+            <th>Cancel</th>
+          </tr>
+        </thead>
+        <tbody>
+          {appoinmentsInfo.length === 0 ? (
             <tr>
-              <th>Date</th>
-              <th>Client</th>
-              <th>Time</th>
-              <th>esthetician</th>
-              <th>Edit</th>
-              <th>Cancel</th>
+              <td colSpan={4}>No appoinments Yet</td>
             </tr>
-          </thead>
-        <tbody>{tableData}</tbody>
-        </table>
-      </div>
+          ) : (
+            tableData
+          )}
+        </tbody>
+      </table>
+    </div>
   ) : (
     <h1 className="loading-message">loading...</h1>
   );
