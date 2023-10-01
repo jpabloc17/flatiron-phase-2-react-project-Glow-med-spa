@@ -18,7 +18,19 @@ function NewAppoinmentForm({ setDisplayForm }) {
   function handleSubmit(e) {
     e.preventDefault();
     setDisplayForm((displayForm) => !displayForm);
-    console.log(formData);
+    const configObj = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    };
+
+    fetch("http://localhost:3001/appoinments", configObj)
+      .then((resp) => resp.json())
+      .then((data) =>
+        alert("Thank you! Your submission has been successfully.")
+      );
   }
 
   return (
@@ -30,7 +42,8 @@ function NewAppoinmentForm({ setDisplayForm }) {
         placeholder=" First Name"
         name="name"
         value={formData.name}
-        /* required */ onChange={handleChange}
+        required
+        onChange={handleChange}
       />
       <label htmlFor="last-name">Last Name</label>
       <input
@@ -39,7 +52,8 @@ function NewAppoinmentForm({ setDisplayForm }) {
         placeholder="Last Name"
         name="lastName"
         value={formData.lastName}
-        /* required */ onChange={handleChange}
+        required
+        onChange={handleChange}
       />
       <label htmlFor="email">Email</label>
       <input
@@ -48,7 +62,8 @@ function NewAppoinmentForm({ setDisplayForm }) {
         placeholder="Email"
         name="email"
         value={formData.email}
-        /* required */ onChange={handleChange}
+        required
+        onChange={handleChange}
       />
       <label htmlFor="phone-number">Phone Number</label>
       <input
@@ -57,7 +72,8 @@ function NewAppoinmentForm({ setDisplayForm }) {
         placeholder="Phone Number"
         name="phoneNumber"
         value={formData.phoneNumber}
-        /* required */ onChange={handleChange}
+        required
+        onChange={handleChange}
       />
       <label htmlFor="date">Select Date</label>
       <input
@@ -65,7 +81,8 @@ function NewAppoinmentForm({ setDisplayForm }) {
         type="date"
         name="date"
         value={formData.date}
-        /* required */ onChange={handleChange}
+        required
+        onChange={handleChange}
       />
       <label htmlFor="time">Select Time</label>
       <input
@@ -73,7 +90,8 @@ function NewAppoinmentForm({ setDisplayForm }) {
         type="time"
         name="time"
         value={formData.time}
-        /* required */ onChange={handleChange}
+        required
+        onChange={handleChange}
       />
       <button type="submit">Submit</button>
     </form>

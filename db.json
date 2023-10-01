@@ -48,5 +48,16 @@
       "description": "Dermaplaning is a safe, non-invasive treatment that uses a medical blade to gently exfoliate your skin. This process removes dead, dulling skin cells as well as peach fuzz, leaving your face softer and smoother than ever before.",
       "time": "75"
     }
+  ],
+  "appoinments": [
+    {
+      "name": "Pablo",
+      "lastName": "Castro",
+      "email": "a@f",
+      "phoneNumber": "a",
+      "date": "2023-08-30",
+      "time": "14:52",
+      "id": 1
+    }
   ]
 }
