@@ -3,24 +3,19 @@
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  position: relative;
 }
 
-.home {
-  height: 90vh;
-  background-image: url("https://info.ehl.edu/hubfs/Imported_Blog_Media/1440x960-medical-spa-1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-blend-mode: lighten;
-  background-color: rgba(255, 255, 255, 0.4);
+.App {
+  height: 100vh;
+  overflow: auto;
+  background-image: linear-gradient(#fdbbff, #fc7676);
 }
 
 .home h1 {
   color: #000000;
   font-size: 4rem;
-  margin: 0 10rem;
+  margin: 20px 10rem;
   text-align: center;
-  padding-top: 10%;
 }
 
 .logo {
@@ -31,4 +26,11 @@
   color: #949fe8;
   text-align: center;
   margin-top: 25px;
+}
+
+@media screen and (max-width: 400px) {
+  .home h1 {
+    font-size: 2rem;
+    margin: 20px;
+  }
 }

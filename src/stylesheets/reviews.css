@@ -1,0 +1,49 @@
+.reviews {
+  text-align: center;
+  margin: 50px auto;
+}
+
+.reviews-container {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.review-card {
+  width: 350px;
+  margin: 0 auto;
+}
+
+.client-picture {
+  position: relative;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  top: 50px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.client-picture img {
+  height: 100%;
+  width: 100%;
+}
+
+.review-details-container {
+  padding: 50px 20px;
+  border-radius: 10px;
+  background-image: linear-gradient(#f1e8e8, #f8dddd);
+}
+
+.Client-name-container {
+  padding: 5px;
+}
+
+.stars {
+  padding: 5px;
+}
+
+.stars span {
+  margin: 0;
+}

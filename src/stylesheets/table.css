@@ -1,16 +1,15 @@
 table {
   background-color: #ffffff;
   margin: 1rem auto 0px auto;
-  /* border-collapse: collapse; */
   box-shadow: 0px 0px 20px 4px;
   border-radius: 5px;
 }
 
 th,
 td {
-  font-size: large;
+  font-size: x-large;
   border: 1px solid #515151;
-  padding: 0.5rem;
+  padding: 1rem;
   text-align: center;
 }
 
@@ -20,11 +19,11 @@ th {
 
 .table-information button {
   background-color: #949fe8;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-radius: 5px;
   border-color: #949fe8;
   color: #ffffff;
-  padding: 2px;
+  padding: 4px;
 }
 
 .table-information button:hover {
@@ -32,18 +31,15 @@ th {
   background-color: #ebebeb;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (max-width: 400px) {
   th,
   td {
-    font-size: x-large;
-    padding: 1rem;
+    font-size: large;
+    padding: 0.5rem;
   }
 
   .table-information button {
-    font-size: 1.2rem;
-    border-radius: 5px;
-    border-color: #949fe8;
-    color: #ffffff;
+    font-size: 1rem;
     padding: 2px;
   }
 }
