@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../stylesheets/form.css";
 
-function NewAppoinmentForm({ setDisplayForm }) {
+function NewAppoinmentForm({ setDisplayForm, setSuccessMessage }) {
   const [formData, setFormData] = useState({
     name: "",
     lastName: "",
@@ -28,9 +28,7 @@ function NewAppoinmentForm({ setDisplayForm }) {
 
     fetch("http://localhost:3001/appoinments", configObj)
       .then((resp) => resp.json())
-      .then((data) =>
-        alert("Thank you! Your submission has been successfully.")
-      );
+      .then(() => setSuccessMessage((successMessage) => !successMessage));
   }
 
   return (

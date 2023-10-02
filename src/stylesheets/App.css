@@ -7,7 +7,6 @@
 
 .App {
   height: 100vh;
-  overflow: auto;
   background-image: linear-gradient(#fdbbff, #fc7676);
 }
 
@@ -23,6 +22,7 @@
 }
 
 .loading-message {
+  height: 80vh;
   color: #949fe8;
   text-align: center;
   margin-top: 25px;
@@ -33,4 +33,33 @@
     font-size: 2rem;
     margin: 20px;
   }
+}
+
+.alert-box {
+  position: fixed;
+  z-index: 100;
+  width: 250px;
+  border: 1px solid black;
+  margin-top: 2rem;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 2%;
+  color: #fdfcfc;
+  background-color: #949fe8;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.alert-box button {
+  font-size: large;
+  padding: 0 10px;
+  margin: 5px;
+  background-color: #fdfcfc;
+  color: #949fe8;
+  border: none;
+}
+
+.alert-box button:hover {
+  background-color: #9397b6;
+  color: #fdfcfc;
 }

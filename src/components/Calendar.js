@@ -63,7 +63,7 @@ function Calendar() {
       </table>
     </div>
   ) : (
-    <h1 className="loading-message">loading...</h1>
+    <h1 className="loading-message">Loading...</h1>
   );
 }
 

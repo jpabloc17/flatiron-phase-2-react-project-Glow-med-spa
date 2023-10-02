@@ -7,6 +7,21 @@ function ServicesPage() {
   const [loading, setLoading] = useState(false);
   const [displayForm, setDisplayForm] = useState(false);
 
+  const [successMassage, setSuccessMessage] = useState(false);
+
+  function Alert() {
+    return (
+      <div className="alert-box">
+        <h3>Thank you, your appointment has been successfully booked.</h3>
+        <button
+          onClick={() => setSuccessMessage((successMassage) => !successMassage)}
+        >
+          X
+        </button>
+      </div>
+    );
+  }
+
   useEffect(() => {
     fetch("http://localhost:3001/spa_services")
       .then((resp) => resp.json())
@@ -29,8 +44,12 @@ function ServicesPage() {
 
   return (
     <>
+      {successMassage ? <Alert /> : null}
       {displayForm ? (
-        <NewAppoinmentForm setDisplayForm={setDisplayForm} />
+        <NewAppoinmentForm
+          setDisplayForm={setDisplayForm}
+          setSuccessMessage={setSuccessMessage}
+        />
       ) : null}
       <div className="service-page">
         {loading ? (
