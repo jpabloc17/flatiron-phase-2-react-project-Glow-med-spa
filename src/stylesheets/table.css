@@ -31,7 +31,7 @@ th {
   background-color: #ebebeb;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
   th,
   td {
     font-size: large;

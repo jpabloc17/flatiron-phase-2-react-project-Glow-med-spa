@@ -4,16 +4,11 @@
   border-radius: 5px 0 0 5px;
 }
 
-.service-page {
-  background-image: linear-gradient(#fdbbff, #fc7676);
-  padding-top: 1px;
-}
-
 .service-container {
   box-shadow: #515151 0px 0px 20px 4px;
   background-color: white;
   border-radius: 5px;
-  margin: 50px 100px;
+  margin: 50px 5rem;
   gap: 1em;
   display: flex;
   align-items: center;
@@ -53,4 +48,13 @@ span {
 
 .blur-background {
   filter: blur(1px);
+}
+
+@media (max-width: 640px) {
+  .service-container {
+    margin: 50px 2.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+  }
 }

@@ -5,15 +5,15 @@
   font-family: sans-serif;
 }
 
-.App {
-  height: 100vh;
+html {
   background-image: linear-gradient(#fdbbff, #fc7676);
+  background-attachment: fixed;
 }
 
 .home h1 {
   color: #000000;
   font-size: 4rem;
-  margin: 20px 10rem;
+  margin: 20px 5rem;
   text-align: center;
 }
 
@@ -27,14 +27,6 @@
   text-align: center;
   margin-top: 25px;
 }
-
-@media screen and (max-width: 400px) {
-  .home h1 {
-    font-size: 2rem;
-    margin: 20px;
-  }
-}
-
 .alert-box {
   position: fixed;
   z-index: 100;
@@ -62,4 +54,11 @@
 .alert-box button:hover {
   background-color: #9397b6;
   color: #fdfcfc;
+}
+
+@media (max-width: 480px) {
+  .home h1 {
+    font-size: 2rem;
+    margin: 20px;
+  }
 }
