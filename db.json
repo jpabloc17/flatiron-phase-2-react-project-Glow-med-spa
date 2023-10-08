@@ -34,7 +34,7 @@
     },
     {
       "id": 5,
-      "name": "Deep Cleansing Facial",
+      "name": "The GLOW Facial",
       "image": "https://www.rejeuvine.com/wp-content/uploads/2018/08/7-Steps-That-the-Best-Spa-F.jpg",
       "price": "150",
       "description": "A deep cleansing facial is a treatment that thoroughly cleanses your pores and removes impurities from your skin. It can be ideal for people with all types of skin who want a thorough, deep face cleanse.",
@@ -58,6 +58,29 @@
       "date": "2023-08-30",
       "time": "14:52",
       "id": 1
+    }
+  ],
+  "reviews": [
+    {
+      "id": 1,
+      "picture": "https://static.vecteezy.com/system/resources/previews/009/749/878/non_2x/woman-profile-mascot-illustration-female-avatar-icon-cartoon-girl-head-face-business-user-logo-free-vector.jpg",
+      "name": "Emily",
+      "stars": 5,
+      "reviewText": "My experience at Glow has been amazing. Manuela is very professional and knowledgeable. Her facials are very relaxing and the results are great. After seeing her and following a treatment plan, I am more confident in my skin. I recommend everyone to invest in their skin and go visit Manuela. The clinic is very clean and the staff is really friendly."
+    },
+    {
+      "id": 2,
+      "picture": "https://static.vecteezy.com/system/resources/previews/009/749/643/original/woman-profile-mascot-illustration-female-avatar-character-icon-cartoon-girl-head-face-business-user-logo-free-vector.jpg",
+      "name": "Lyda",
+      "stars": 5,
+      "reviewText": "This place is great for any facial treatment and I highly recommend trying it out. Manuela is knowledgeable and kind and I have been very satisfied with any treatment I've received here!"
+    },
+    {
+      "id": 3,
+      "picture": "https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg",
+      "name": "Pablo",
+      "stars": 5,
+      "reviewText": "I did the microneedling treatment. I found Manuela experienced and knowledgeable. She explained the whole process and what to expect. Very professional."
     }
   ]
 }

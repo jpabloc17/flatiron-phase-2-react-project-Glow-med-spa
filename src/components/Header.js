@@ -1,7 +1,7 @@
 import NavBar from "./NavBar";
 import { useEffect, useState } from "react";
 import "../stylesheets/header.css";
-import logo from "../media/RELUXE-LOGO.png";
+import logo from "../media/Glow (2).png";
 
 function Header() {
   const [y, setY] = useState(0);

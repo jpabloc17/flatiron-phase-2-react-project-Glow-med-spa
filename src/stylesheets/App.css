@@ -10,11 +10,14 @@ html {
   background-attachment: fixed;
 }
 
-.home h1 {
-  color: #000000;
-  font-size: 4rem;
-  margin: 20px 5rem;
+.welcome-message-container {
   text-align: center;
+}
+
+.welcome-message-container img {
+  height: 600px;
+  width: 600px;
+  margin: 3rem auto;
 }
 
 .logo {
@@ -56,9 +59,14 @@ html {
   color: #fdfcfc;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .home h1 {
     font-size: 2rem;
     margin: 20px;
+  }
+
+  .welcome-message-container img {
+    height: auto;
+    width: 100%;
   }
 }

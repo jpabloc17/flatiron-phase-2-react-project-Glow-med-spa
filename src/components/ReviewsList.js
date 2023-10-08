@@ -17,7 +17,7 @@ function ReviewsList() {
 
   return (
     <div className="reviews">
-      <h3>Here are some reviews from our satisfied customers</h3>
+      <h2>Client Love</h2>
       <div className="reviews-container">{reviewList}</div>
     </div>
   );

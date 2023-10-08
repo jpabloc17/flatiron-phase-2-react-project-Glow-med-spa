@@ -1,8 +1,16 @@
 .reviews {
   text-align: center;
-  margin: 50px auto;
+  margin: 150px auto;
 }
 
+.reviews h2 {
+  font-size: 4rem;
+  color: #fff;
+  filter: drop-shadow(5px 5px 4px #c82966);
+  width: fit-content;
+  margin: 0 auto;
+  font-family: "Lucida Handwriting";
+}
 .reviews h3 {
   width: fit-content;
   margin: auto;
@@ -51,4 +59,11 @@
 
 .stars span {
   margin: 0;
+}
+
+.review-card p {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
 }
