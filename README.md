@@ -1,13 +1,19 @@
-# Reluxe Med Spa
+# Glow Med Spa
 
-Reluxe is my Flatiron Frontend Phase 2 project created with create-react-app.
+Glow is my Flatiron Frontend Phase 2 project created with create-react-app.
 In this application we are simulating a medical spa website where you can see all the services that they offer and book appointments.
 
 ## Installation
 
-If Anyone would like to see the code and work on this project, please fork and clone this repository and make your own copy. User will need to run "npm install" in their console to install all the necessary dependencies. Then run "npm run server" this should start the server on the http://localhost:3001.
+If Anyone would like to see the code and work on this project, please fork and clone this repository and make your own copy. User will need to run "npm install" in their console to install all the necessary dependencies. Then run "npm run server" this should start the server on the localhost in the port 3001.
 
 Then open another tab in the terminal and run "npm start" this will set up the development environment and run the application on the browser.
+
+## Use
+
+If you want to know how the application works, you can visit this link
+
+https://www.youtube.com/watch?v=GPVadTEcqNk&t=4s
 
 ## Contributing
 
