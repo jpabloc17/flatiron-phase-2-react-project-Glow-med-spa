@@ -17,12 +17,20 @@ function ReviewsList() {
     <Reviews key={review.id} review={review} />
   ));
 
+  function handleUpdateReviews(newReviewData) {
+    setReviesArr([...reviewsArr, newReviewData]);
+  }
+
   return (
     <div className="reviews">
       <h2>Client Love</h2>
 
       {newReview ? (
-        <NewReview />
+        <NewReview
+          setDisplayReviewForm={setNewReview}
+          displayReviewForm={newReview}
+          onHandleUpdateReviews={handleUpdateReviews}
+        />
       ) : (
         <button onClick={() => setNewReview((newReview) => !newReview)}>
           Leave a review
