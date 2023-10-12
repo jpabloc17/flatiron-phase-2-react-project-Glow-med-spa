@@ -1,9 +1,11 @@
 import { useEffect, useState } from "react";
 import Reviews from "./Reviews";
+import NewReview from "./NewReview";
 import "../stylesheets/reviews.css";
 
 function ReviewsList() {
   const [reviewsArr, setReviesArr] = useState([]);
+  const [newReview, setNewReview] = useState(false);
 
   useEffect(() => {
     fetch("http://localhost:3001/reviews")
@@ -18,6 +20,14 @@ function ReviewsList() {
   return (
     <div className="reviews">
       <h2>Client Love</h2>
+
+      {newReview ? (
+        <NewReview />
+      ) : (
+        <button onClick={() => setNewReview((newReview) => !newReview)}>
+          Leave a review
+        </button>
+      )}
       <div className="reviews-container">{reviewList}</div>
     </div>
   );
