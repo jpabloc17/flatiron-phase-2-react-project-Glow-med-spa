@@ -16,7 +16,7 @@
 
 .new-review-form div {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -24,20 +24,29 @@
   width: 50%;
 }
 
+.avatars-picture-container label {
+  padding: 0;
+  line-height: 0;
+}
+
+.avatars-picture-container span {
+  font-weight: 100;
+  font-size: 16px;
+  padding-left: 16px;
+  margin: 0;
+}
+
 .new-review-form textarea {
   line-height: 2;
-  padding-left: 1rem;
+  padding: 0 0.5rem;
   background-color: #fffcfc;
   margin: 0 1rem;
   border-radius: 10px;
   border: none;
 }
 
-input {
-  background-color: #fffcfc;
-  margin: 0 1rem;
-  border-radius: 10px;
-  border: none;
+.radio-options {
+  height: 25px;
 }
 
 .new-review-form .buttons {

@@ -10,8 +10,7 @@ function NewReview({
     name: "",
     stars: "",
     reviewText: "",
-    picture:
-      "https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg",
+    picture: "",
   });
 
   function handleChange(e) {
@@ -51,6 +50,51 @@ function NewReview({
             value={reviewData.name}
             onChange={handleChange}
           />
+        </div>
+        <div className="avatars-picture-container">
+          <span>Picture</span>
+          <input
+            id="picture-1"
+            name="picture"
+            type="radio"
+            value="https://static.vecteezy.com/system/resources/previews/009/749/878/non_2x/woman-profile-mascot-illustration-female-avatar-icon-cartoon-girl-head-face-business-user-logo-free-vector.jpg"
+            onChange={handleChange}
+          />
+          <label htmlFor="picture-1">
+            <img
+              className="radio-options"
+              src="https://static.vecteezy.com/system/resources/previews/009/749/878/non_2x/woman-profile-mascot-illustration-female-avatar-icon-cartoon-girl-head-face-business-user-logo-free-vector.jpg"
+              alt="avatar"
+            />
+          </label>
+          <input
+            id="picture-2"
+            name="picture"
+            type="radio"
+            value="https://static.vecteezy.com/system/resources/previews/009/749/643/original/woman-profile-mascot-illustration-female-avatar-character-icon-cartoon-girl-head-face-business-user-logo-free-vector.jpg"
+            onChange={handleChange}
+          />
+          <label htmlFor="picture-2">
+            <img
+              className="radio-options"
+              src="https://static.vecteezy.com/system/resources/previews/009/749/643/original/woman-profile-mascot-illustration-female-avatar-character-icon-cartoon-girl-head-face-business-user-logo-free-vector.jpg"
+              alt="avatar"
+            />
+          </label>
+          <input
+            id="picture-3"
+            name="picture"
+            type="radio"
+            value="https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg"
+            onChange={handleChange}
+          />
+          <label htmlFor="picture-3">
+            <img
+              className="radio-options"
+              src="https://static.vecteezy.com/system/resources/previews/009/749/751/original/avatar-man-icon-cartoon-male-profile-mascot-illustration-head-face-business-user-logo-free-vector.jpg"
+              alt="avatar"
+            />
+          </label>
         </div>
         <div>
           <label htmlFor="stars">Number of Stars</label>
